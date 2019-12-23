@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onclick = "event.preventDefault()" autocomplete = "off" >
+                    <div>
+                        <label>Fullname</label>
+                        <input type = "text" name = "fullName" id = "fullName" required >
+                    </div>
+                    <div>
+                        <label>EMP code</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" onclick="onFormSummit()">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full name</th>
+                            <th>EMP code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>   
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
